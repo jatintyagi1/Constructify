@@ -1,0 +1,150 @@
+/* footer.css */
+
+.footer-wrapper {
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.footer-upper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px 15px;
+}
+
+.footer-about-wrapper,
+.footer-business-wrapper,
+.footer-sustainability-wrapper,
+.footer-contact-wrapper {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-about-container,
+.footer-business-container,
+.footer-sustainability-container,
+.footer-contact-container {
+    margin-bottom: 20px;
+}
+
+.footer-list-container {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-list {
+    margin: 10px 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-list::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Adjust the thickness of the underline */
+    background: #333; /* Adjust the color of the underline */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out; /* Adjust the duration of the underline animation */
+}
+
+.footer-list:hover::after{
+    transform: scale(1);
+    transform-origin: bottom left;
+}
+
+.footer-content-heading{
+    color: #0077b5;
+}
+
+.footer-contact-social-media-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-linkedin-icon {
+    color: #0077b5;
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.footer-contact-follow-us-text {
+    font-size: 1em;
+}
+
+.footer-contact-container p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+
+/* copyright Section   */
+
+.footer-copyright-wrapper {
+    color: #fff;
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.footer-copyright-container {
+   
+}
+
+.footer-copyright-container p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.footer-copyright-term-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.footer-copyright-terms-condition {
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.footer-copyright-terms-condition:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-upper-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-about-wrapper,
+    .footer-business-wrapper,
+    .footer-sustainability-wrapper,
+    .footer-contact-wrapper {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+/* footer Copyright Section */
+/* .footer-copyright-wrapper{
+
+}
+
+.footer-copyright-terms-condition{
+    cursor: pointer;
+} */
