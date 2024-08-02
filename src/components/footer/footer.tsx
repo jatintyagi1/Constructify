@@ -76,6 +76,7 @@ const Footer = () => {
                         <p>info@lntecc.com</p>
                     </div>
                 </div>
+                
             </div>
             {/* Copyright Container */}
             <div className="footer-copyright-wrapper">
@@ -83,7 +84,7 @@ const Footer = () => {
                     <p><FontAwesomeIcon icon={faCopyright}/>2024 Constructify. All Right Reserved</p>
                 </div>
                 <div className="footer-copyright-term-container">
-                    <p className='footer-copyright-terms-condition'>Copyright & Terms</p>
+                    <p className='footer-copyright-terms-condition'>Copyright & Terms and Condition</p>
                 </div>
             </div>
         </div>
